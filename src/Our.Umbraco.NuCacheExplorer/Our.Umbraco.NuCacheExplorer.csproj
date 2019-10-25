@@ -276,13 +276,7 @@
     <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\lib\codemirror.css" />
     <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\lib\codemirror.js" />
     <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\lib\UICodeMirrorDirective.js" />
-    <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\mode\index.html" />
-    <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\mode\javascript\index.html" />
     <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\mode\javascript\javascript.js" />
-    <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\mode\javascript\json-ld.html" />
-    <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\mode\javascript\test.js" />
-    <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\mode\javascript\typescript.html" />
-    <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\mode\meta.js" />
     <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\nucacheexplorer.controller.js" />
     <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\nucacheexplorer.css" />
     <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\dashboard.html" />
