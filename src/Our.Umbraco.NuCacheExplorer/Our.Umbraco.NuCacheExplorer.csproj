@@ -280,7 +280,6 @@
     <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\nucacheexplorer.controller.js" />
     <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\nucacheexplorer.css" />
     <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\dashboard.html" />
-    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\KeyValuePairExtensions.cs" />
@@ -303,12 +302,6 @@
     <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\package.manifest" />
     <Content Include="Our.Umbraco.NuCacheExplorer.nuspec" />
     <None Include="packages.config" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,4 +1,4 @@
-# Our.Umbraco.DocTypePicker
+# Our.Umbraco.NuCacheExplorer
 
 *Don't forget to do a NuGet restore.*
 
@@ -12,4 +12,4 @@ Usage:
 2) Go to the Developer section
 
 *When creating the nuget package, use the following command*
-nuget pack Our.Umbraco.NuCacheExplorer.csproj -Exclude bin/**/*.*
+nuget pack Our.Umbraco.NuCacheExplorer.csproj
