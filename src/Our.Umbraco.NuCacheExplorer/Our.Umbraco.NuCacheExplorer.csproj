@@ -301,6 +301,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Plugins\OurUmbracoNuCacheExplorer\package.manifest" />
+    <Content Include="Our.Umbraco.NuCacheExplorer.nuspec" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
