@@ -13,3 +13,5 @@ Usage:
 
 *When creating the nuget package, use the following command*
 nuget pack Our.Umbraco.NuCacheExplorer.csproj
+
+Thanks to Warren Buckley https://github.com/warrenbuckley for allowing me to use his code for parsing the NuCache files.
