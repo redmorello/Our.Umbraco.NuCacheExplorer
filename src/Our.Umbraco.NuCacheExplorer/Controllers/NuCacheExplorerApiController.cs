@@ -10,6 +10,7 @@ using CSharpTest.Net.Collections;
 using CSharpTest.Net.Serialization;
 using Our.Umbraco.NuCacheExplorer.Models;
 using Our.Umbraco.NuCacheExplorer.Serializer;
+using Umbraco.Core.Configuration;
 using Umbraco.Web.Mvc;
 using Umbraco.Web.WebApi;
 
@@ -18,9 +19,15 @@ namespace Our.Umbraco.NuCacheExplorer.Controllers
     [PluginController("OurUmbracoNuCacheExplorer")]
     public class NuCacheExplorerApiController : UmbracoAuthorizedApiController
     {
+        private readonly IGlobalSettings globalSettings;
+
+        public NuCacheExplorerApiController(IGlobalSettings globalSettings)
+        {
+            this.globalSettings = globalSettings ?? throw new ArgumentNullException(nameof(globalSettings));
+        }
         public HttpResponseMessage GetNuCacheFile(string contentType)
         {
-            var filePath = HttpContext.Current.Server.MapPath("~/App_Data/TEMP/NuCache/NuCache." + contentType + ".db");
+            var filePath = Path.Combine(globalSettings.LocalTempPath, "NuCache\\NuCache." + contentType + ".db");
             var tempFileName = filePath.Replace(".db", ".Explorer.Temp.db");
 
             try
