@@ -5,7 +5,6 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Web;
 using CSharpTest.Net.Collections;
 using CSharpTest.Net.Serialization;
 using Our.Umbraco.NuCacheExplorer.Models;
