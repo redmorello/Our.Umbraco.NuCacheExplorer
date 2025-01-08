@@ -1,0 +1,81 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+	  <TargetFrameworks>net80</TargetFrameworks>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <!-- nuget package stuff -->
+  <PropertyGroup>
+    <PackageId>Our.Umbraco.NuCacheExplorer</PackageId>
+    <Version>3.0.2</Version>
+    <AssemblyVersion>3.0.2.0</AssemblyVersion>
+    <Authors>Ian Houghton</Authors>
+    <Company>RedMorello Limited</Company>
+    <FileVersion>3.0.2.0</FileVersion>
+    <Copyright>Copyright 2025</Copyright>
+
+    <PackageIcon>nucacheexplorer.png</PackageIcon>
+    <PackageIconUrl />
+    <PackageProjectUrl>https://github.com/redmorello/Our.Umbraco.NuCacheExplorer/</PackageProjectUrl>
+    <Product></Product>
+    <PackageTags>Our.Umbraco.NuCacheExplorer NuCache Explorer</PackageTags>
+
+    <RepositoryUrl>https://github.com/redmorello/Our.Umbraco.NuCacheExplorer/</RepositoryUrl>
+
+    <Title>Our.Umbraco.NuCacheExplorer</Title>
+    <Description>Umbraco CMS NuCache Explorer</Description>
+    <PackageReleaseNotes>
+      1.0.0 - Intital Release
+      2.0.3 - Bug fixes
+      3.0.2 - Change to Umbraco V13
+    </PackageReleaseNotes>
+
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <PackageOutputPath>output</PackageOutputPath>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+  </PropertyGroup>
+
+  <!-- package files -->
+  <ItemGroup>
+    <Content Include="App_Plugins\**\*.*">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+
+    <!-- target file to copy app_plugins in .netcore -->
+    <None Include="build\**\*.*">
+      <Pack>True</Pack>
+      <PackagePath>buildTransitive</PackagePath>
+    </None>
+    <None Include="..\images\nucacheexplorer.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+
+	<None Include="images\nucacheexplorer.png">
+		<Pack>True</Pack>
+		<PackagePath></PackagePath>
+	</None>  
+  </ItemGroup>
+
+  <ItemGroup>
+	<PackageReference Include="Umbraco.Cms.Web.Website" Version="13.3.1" />
+	<PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="13.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="output\" />
+  </ItemGroup>	
+
+  <Target Name="RemoveLuceneAnalyzer" BeforeTargets="CoreCompile">
+    <ItemGroup>
+      <Analyzer Remove="@(Analyzer)" Condition="%(FileName) == 'Lucene.Net.CodeAnalysis.CSharp'" />
+    </ItemGroup>
+  </Target>
+
+</Project>

@@ -93,3 +93,6 @@ src/Website/App_Plugins/Our.Umbraco.DocTypePicker/
 **/App_Data/Models/ood.flag
 
 src/Website/App_Plugins/OurUmbracoNuCacheExplorer/
+Our.Umbraco.NuCacheExplorer/.vs
+.vs
+Our.Umbraco.NuCacheExplorer/output

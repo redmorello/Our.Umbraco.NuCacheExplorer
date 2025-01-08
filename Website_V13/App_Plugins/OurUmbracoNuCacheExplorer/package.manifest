@@ -1,0 +1,30 @@
+﻿{
+	css: [
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/nucacheexplorer.css',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/lib/codemirror.css',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/addon/fold/foldgutter.css',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/addon/search/matchesonscrollbar.css',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/addon/dialog/dialog.css'
+	],
+	// array of files we want to inject into the application on app_start
+	javascript: [
+	    '~/App_Plugins/OurUmbracoNuCacheExplorer/nucacheexplorer.controller.js',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/lib/codemirror.js',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/lib/UICodeMirrorDirective.js',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/mode/javascript/javascript.js',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/addon/fold/foldcode.js',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/addon/fold/foldgutter.js',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/addon/fold/brace-fold.js',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/addon/fold/xml-fold.js',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/addon/fold/indent-fold.js',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/addon/fold//markdown-fold.js',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/addon/fold/comment-fold.js',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/addon/search/searchcursor.js',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/addon/search/search.js',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/addon/scroll/annotatescrollbar.js',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/addon/search/matchesonscrollbar.js',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/addon/search/jump-to-line.js',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/addon/search/match-highlighter.js',
+		'~/App_Plugins/OurUmbracoNuCacheExplorer/addon/dialog/dialog.js'		
+	]
+}
