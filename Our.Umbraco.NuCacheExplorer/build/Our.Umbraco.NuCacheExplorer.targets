@@ -1,0 +1,27 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <OurUmbracoNuCacheExplorerContentFilesPath>$(MSBuildThisFileDirectory)..\content\App_Plugins\OurUmbracoNuCacheExplorer\**\*.*</OurUmbracoNuCacheExplorerContentFilesPath>
+    </PropertyGroup>
+
+    <Target Name="CopyOurUmbracoNuCacheExplorerAssets" BeforeTargets="Build">
+        <ItemGroup>
+            <OurUmbracoNuCacheExplorerContentFiles Include="$(OurUmbracoNuCacheExplorerContentFilesPath)" />
+        </ItemGroup>
+        <Message Text="Copying Our.Umbraco.NuCacheExplorer files: $(OurUmbracoNuCacheExplorerContentFilesPath) - #@(OurUmbracoNuCacheExplorerContentFiles->Count()) files"  Importance="high" />
+        <Copy
+            SourceFiles="@(OurUmbracoNuCacheExplorerContentFiles)"
+            DestinationFiles="@(OurUmbracoNuCacheExplorerContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\OurUmbracoNuCacheExplorer\%(RecursiveDir)%(Filename)%(Extension)')"
+            SkipUnchangedFiles="true" />
+
+    </Target>
+
+    <Target Name="ClearOurUmbracoNuCacheExplorerAssets" BeforeTargets="Clean">
+        <ItemGroup>
+            <OurUmbracoNuCacheExplorerDir Include="$(MSBuildProjectDirectory)\App_Plugins\OurUmbracoNuCacheExplorer\" />
+        </ItemGroup>
+        <Message Text="Clear old OurUmbracoNuCacheExplorer data"  Importance="high" />
+        <RemoveDir Directories="@(OurUmbracoNuCacheExplorerDir)"  />
+    </Target>
+
+</Project>

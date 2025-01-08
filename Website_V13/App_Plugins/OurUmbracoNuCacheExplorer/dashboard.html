@@ -1,0 +1,29 @@
+﻿<div id="nuCacheExplorer" ng-controller="OurUmbracoNuCacheExplorer.Dashboard as vm">
+    
+    <umb-box>
+        <umb-box-content>
+            <h3 class="bold">NuCache Explorer</h3>
+
+            <umb-load-indicator ng-show="vm.loading"></umb-load-indicator>
+
+            <p>
+                With the explorer you can load your content or media NuCache files, and then search for data.
+            </p>
+            <p>
+                Note: Ctrl-F to open search, press enter to search and find Next.
+            </p>
+
+            <div>
+                <button type="button" ng-click="vm.load('content')" class="btn btn-info">Load Content</button>
+                <button type="button" ng-click="vm.load('media')" class="btn btn-info">Load Media</button>
+            </div>
+            <p style="min-height: 450px; background: #f8f8f8; padding: 10px; margin:15px 0 4px 0;">
+                <textarea ng-show="!vm.working" ui-codemirror ui-codemirror-options="vm.editorOptions" ng-model="vm.data"></textarea>
+            </p>
+
+            <p>Total Items: {{vm.totalItems}}</p>
+            <p ng-show="vm.loaded">Load Time: {{vm.clock.Milliseconds}} Milliseconds</p>
+
+        </umb-box-content>
+    </umb-box>
+</div>
