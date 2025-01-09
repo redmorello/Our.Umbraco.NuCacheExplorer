@@ -15,11 +15,10 @@
     <FileVersion>3.0.2.0</FileVersion>
     <Copyright>Copyright 2025</Copyright>
 
-    <PackageIcon>nucacheexplorer.png</PackageIcon>
-    <PackageIconUrl />
+    <!--<PackageIcon>nucacheexplorer.png</PackageIcon>-->
     <PackageProjectUrl>https://github.com/redmorello/Our.Umbraco.NuCacheExplorer/</PackageProjectUrl>
     <Product></Product>
-    <PackageTags>Our.Umbraco.NuCacheExplorer NuCache Explorer</PackageTags>
+    <PackageTags>Our.Umbraco.NuCacheExplorer NuCache Explorer umbraco-marketplace</PackageTags>
 
     <RepositoryUrl>https://github.com/redmorello/Our.Umbraco.NuCacheExplorer/</RepositoryUrl>
 
@@ -37,6 +36,7 @@
     <ContentTargetFolders>content</ContentTargetFolders>
     <PackageOutputPath>output</PackageOutputPath>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
 
   </PropertyGroup>
 
@@ -52,15 +52,9 @@
       <Pack>True</Pack>
       <PackagePath>buildTransitive</PackagePath>
     </None>
-    <None Include="..\images\nucacheexplorer.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-
-	<None Include="images\nucacheexplorer.png">
-		<Pack>True</Pack>
-		<PackagePath></PackagePath>
-	</None>  
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\nucacheexplorer.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -70,6 +64,20 @@
 
   <ItemGroup>
     <Folder Include="output\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="nucacheexplorer.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>	
 
   <Target Name="RemoveLuceneAnalyzer" BeforeTargets="CoreCompile">

@@ -30,7 +30,7 @@ namespace Our.Umbraco.NuCacheExplorer.Controllers
         {
             var baseLocation = _hostingSettings.Value.LocalTempStorageLocation.ToString() == "Default" ? "umbraco\\Data\\TEMP" : "local\\TEMP";
 
-            var filePath = Path.Combine("umbraco\\Data\\TEMP", "NuCache\\NuCache." + contentType + ".db");
+            var filePath = Path.Combine(baseLocation, "NuCache\\NuCache." + contentType + ".db");
             var tempFileName = filePath.Replace(".db", ".Explorer.Temp.db");
 
             try

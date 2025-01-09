@@ -1,0 +1,39 @@
+{
+  "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
+  "AddOnPackagesRequiredForUmbracoCloud": [],
+  "AlternateCategory": "",
+  "AuthorDetails": {
+    "Name": "Ian Houghton",
+    "Description": "Umbraco CMS NuCache Explorer",
+    "Url": "https://github.com/redmorello/Our.Umbraco.NuCacheExplorer/",
+    "ImageUrl": "https://github.com/redmorello/Our.Umbraco.NuCacheExplorer/nucacheexplorer.png",
+    "Contributors": [
+      {
+        "Name": "Ian Houghton",
+        "Url": "https://github.com/redmorello"
+      }
+    ],
+    "SyncContributorsFromRepository": "false"
+  },
+  "Category": "developer-tools",
+  "Description": "Umbraco CMS NuCache Explorer",
+  "DiscussionForumUrl": "",
+  "DocumentationUrl": "",
+  "LicenseTypes": [ "Free" ],
+  "IssueTrackerUrl": "https://github.com/redmorello/Our.Umbraco.NuCacheExplorer/issues",
+  "IsSubPackageOf": "",
+  "PackageType": "Package",
+  "PackagesByAuthor": [],
+  "RelatedPackages": [],
+  "Screenshots": [
+    {
+      "ImageUrl": "https://github.com/redmorello/Our.Umbraco.NuCacheExplorer/screenshot.png",
+      "Caption": "Screenshot"
+    }
+  ],
+  "Tags": [],
+  "Title": "NuCache Explorer",
+  "VersionDependencyMode": "",
+  "VersionSpecificPackageIds": [],
+  "VideoUrl": ""
+}
