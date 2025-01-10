@@ -8,11 +8,11 @@
   <!-- nuget package stuff -->
   <PropertyGroup>
     <PackageId>Our.Umbraco.NuCacheExplorer</PackageId>
-    <Version>3.0.2</Version>
-    <AssemblyVersion>3.0.2.0</AssemblyVersion>
+    <Version>3.0.3</Version>
+    <AssemblyVersion>3.0.3.0</AssemblyVersion>
     <Authors>Ian Houghton</Authors>
     <Company>RedMorello Limited</Company>
-    <FileVersion>3.0.2.0</FileVersion>
+    <FileVersion>3.0.3.0</FileVersion>
     <Copyright>Copyright 2025</Copyright>
 
     <!--<PackageIcon>nucacheexplorer.png</PackageIcon>-->
@@ -25,10 +25,11 @@
     <Title>Our.Umbraco.NuCacheExplorer</Title>
     <Description>Umbraco CMS NuCache Explorer</Description>
     <PackageReleaseNotes>
-      1.0.0 - Intital Release
-      2.0.3 - Bug fixes
-      3.0.2 - Change to Umbraco V13
-    </PackageReleaseNotes>
+		1.0.0 - Intital Release
+		2.0.3 - Bug fixes
+		3.0.2 - Change to Umbraco V13
+		3.0.3 - Add Umbraco marketplace json file
+	</PackageReleaseNotes>
 
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <IncludeSymbols>true</IncludeSymbols>
