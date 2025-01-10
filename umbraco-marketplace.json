@@ -15,7 +15,7 @@
     ],
     "SyncContributorsFromRepository": "false"
   },
-  "Category": "developer-tools",
+  "Category": "Developer Tools",
   "Description": "Umbraco CMS NuCache Explorer",
   "DiscussionForumUrl": "",
   "DocumentationUrl": "",
@@ -33,7 +33,7 @@
   ],
   "Tags": [],
   "Title": "NuCache Explorer",
-  "VersionDependencyMode": "",
+  "VersionDependencyMode": "Default",
   "VersionSpecificPackageIds": [],
   "VideoUrl": ""
 }
